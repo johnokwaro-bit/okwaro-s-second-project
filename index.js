@@ -35,23 +35,24 @@ function inIt (){
   function renderLocation(data){    
     const userTemplate  = document.querySelector('[user-location-container]')
 
-        const searchInput = document.querySelector('[data-search]')
+    
+    const searchInput = document.querySelector('[data-search]')
 
     searchInput.addEventListener('input', (e) => {
       const value = e.target.value
-      console.log(value)
+      
     })
     data.forEach(location => {
       const li = document.createElement('li')
-      li.textContent = location.name
-      userTemplate.append(li)
-      console.log(userTemplate)
-      
-      
+
+      li.innerHTML = location.name
+      userTemplate.append(li)      
+          
     })
+    
   }
-   
   
+    
   document.getElementById('review-form').addEventListener('submit', event=>{
     event.preventDefault();
     const form = event.target;

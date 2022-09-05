@@ -4,7 +4,7 @@ This website is for a Restaurant named Okandas located in the CBD of Nairobi Tow
 
 ## Setup
 
-To be able to access every commpnet of this website, run 'json-server --watch db.json' since it's using a local API.
+To be able to access every componet of this website, run 'json-server --watch db.json' since it's using a local API.
 
 ## Deliverables
 
